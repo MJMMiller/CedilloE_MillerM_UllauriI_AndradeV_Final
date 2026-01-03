@@ -73,8 +73,7 @@ public class LogDAO {
 
         try (Connection con = ConexionBDD.getConexion();
              PreparedStatement ps = con.prepareStatement(sql)) {
-
-            ps.executeUpdate();
+             ps.executeUpdate();
 
         } catch (Exception e) {
             e.printStackTrace();
